@@ -2,81 +2,91 @@
 h1
 {
     font-size: 50px;
-    color: #ff0048;
-    font-family: franklin;
+    color: #1fbd00;
+    font-family: 'OCR A Std', monospace;
 }
 
 h2
 {
     font-size: 40px;
-    color: #ff4f6d;
-    font-family: franklin;
+    color: #70d15c;
+    font-family: 'OCR A Std', monospace;
 }
 
 h3
 {
     font-size: 35px;
-    color: coral;
-    font-family: franklin;
+    color: #70d15c;
+    font-family: 'OCR A Std', monospace;
 }
 
 p
 {
-    font-size: 25px;
-    font-family: franklin;
+    font-size: 20px;
+    font-family: 'OCR A Std', monospace;
 }
 /*/Parágrafo*/
+
+/*Links*/
+a:link {
+ color: #1fbd00;
+}
+
+a:hover {
+ color: #70d15c;
+}
+/*/Links*/
 
 /*Listas*/
 ol
 {
      font-size: 25px;
-     font-family: franklin;
- }
+     font-family: 'OCR A Std', monospace;
+    }
 
  ul
  {
      font-size: 25px;
-     font-family: franklin;
-}
+     font-family: 'OCR A Std', monospace;
+    }
 /*/Listas*/
 
 /*Tabela*/
 caption
 {
     font-size: 40px;
-    color: #ff0048;
+    color: #1fbd00;
     font-weight:bold;
-    font-family: franklin;
+    font-family: 'OCR A Std', monospace;
 }
 
 table
 {
-    background-color: #db7284;
-    font-family: franklin;
+    background-color: #fff0f0;
+    font-family: 'OCR A Std', monospace;
 }
 
 thead
 {
      font-size: 25px;
      color: #fff0f0;
-     background-color: #ff4f6d;
-     font-family: franklin;
-}
+     background-color: #70d15c;
+     font-family: 'OCR A Std', monospace;
+    }
 
 tbody
 {
      font-size: 20px;
      color: #fff0f0;
-     background-color: #ffa1b1; 
-     font-family: franklin;
-}
+     background-color: #9fe491; 
+     font-family: 'OCR A Std', monospace;
+    }
 
 tfoot
 {
     font-size: 15px;
     color: #fff0f0;
-    background-color: #ffa1b1; 
-    font-family: franklin;
+    background-color: #9fe491; 
+    font-family: 'OCR A Std', monospace;
 }
 /*/Tabela*/
