@@ -27,15 +27,24 @@ p
 }
 /*/Parágrafo*/
 
+
 /*Links*/
-a:link {
+a:link 
+{
  color: #1fbd00;
 }
 
-a:hover {
+a:hover 
+{
  color: #70d15c;
 }
+
+a:visited 
+{
+    color: #46853a;
+}
 /*/Links*/
+
 
 /*Listas*/
 ol
@@ -50,6 +59,7 @@ ol
      font-family: 'OCR A Std', monospace;
     }
 /*/Listas*/
+
 
 /*Tabela*/
 caption
@@ -90,3 +100,18 @@ tfoot
     font-family: 'OCR A Std', monospace;
 }
 /*/Tabela*/
+
+
+/*Input*/
+label
+{
+    font-size: 18px;
+    font-family: 'OCR A Std', monospace;
+}
+
+input
+{
+    font-size: 14px;
+    color: #46853a;
+    font-family: 'OCR A Std', monospace;
+}
