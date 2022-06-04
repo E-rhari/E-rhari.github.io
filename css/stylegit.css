@@ -1,0 +1,82 @@
+/*Parágrafos*/
+h1
+{
+    font-size: 50px;
+    color: #ff0048;
+    font-family: franklin;
+}
+
+h2
+{
+    font-size: 40px;
+    color: #ff4f6d;
+    font-family: franklin;
+}
+
+h3
+{
+    font-size: 35px;
+    color: coral;
+    font-family: franklin;
+}
+
+p
+{
+    font-size: 25px;
+    font-family: franklin;
+}
+/*/Parágrafo*/
+
+/*Listas*/
+ol
+{
+     font-size: 25px;
+     font-family: franklin;
+ }
+
+ ul
+ {
+     font-size: 25px;
+     font-family: franklin;
+}
+/*/Listas*/
+
+/*Tabela*/
+caption
+{
+    font-size: 40px;
+    color: #ff0048;
+    font-weight:bold;
+    font-family: franklin;
+}
+
+table
+{
+    background-color: #db7284;
+    font-family: franklin;
+}
+
+thead
+{
+     font-size: 25px;
+     color: #fff0f0;
+     background-color: #ff4f6d;
+     font-family: franklin;
+}
+
+tbody
+{
+     font-size: 20px;
+     color: #fff0f0;
+     background-color: #ffa1b1; 
+     font-family: franklin;
+}
+
+tfoot
+{
+    font-size: 15px;
+    color: #fff0f0;
+    background-color: #ffa1b1; 
+    font-family: franklin;
+}
+/*/Tabela*/
