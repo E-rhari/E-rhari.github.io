@@ -1,28 +1,28 @@
 /*Parágrafos*/
 h1
 {
-    font-size: 50px;
+    font-size: 3em;
     color: #1fbd00;
     font-family: 'OCR A Std', monospace;
 }
 
 h2
 {
-    font-size: 40px;
+    font-size: 2.5em;
     color: #70d15c;
     font-family: 'OCR A Std', monospace;
 }
 
 h3
 {
-    font-size: 35px;
+    font-size: 2.2em;
     color: #70d15c;
     font-family: 'OCR A Std', monospace;
 }
 
 p
 {
-    font-size: 20px;
+    font-size: 1.25em;
     font-family: 'OCR A Std', monospace;
 }
 /*/Parágrafo*/
@@ -47,24 +47,18 @@ a:visited
 
 
 /*Listas*/
-ol
+li
 {
-     font-size: 25px;
-     font-family: 'OCR A Std', monospace;
-    }
-
- ul
- {
-     font-size: 25px;
-     font-family: 'OCR A Std', monospace;
-    }
+    font-size: 1.25em;
+    font-family: 'OCR A Std', monospace;
+}
 /*/Listas*/
 
 
 /*Tabela*/
 caption
 {
-    font-size: 40px;
+    font-size: 2.5em;
     color: #1fbd00;
     font-weight:bold;
     font-family: 'OCR A Std', monospace;
@@ -72,13 +66,15 @@ caption
 
 table
 {
+    margin-left: auto;
+    margin-right: auto;
     background-color: #fff0f0;
     font-family: 'OCR A Std', monospace;
 }
 
 thead
 {
-     font-size: 25px;
+     font-size: 1.5em;
      color: #fff0f0;
      background-color: #70d15c;
      font-family: 'OCR A Std', monospace;
@@ -86,7 +82,7 @@ thead
 
 tbody
 {
-     font-size: 20px;
+     font-size: 1.25em;
      color: #fff0f0;
      background-color: #9fe491; 
      font-family: 'OCR A Std', monospace;
@@ -94,7 +90,7 @@ tbody
 
 tfoot
 {
-    font-size: 15px;
+    font-size: 0.75em;
     color: #fff0f0;
     background-color: #9fe491; 
     font-family: 'OCR A Std', monospace;
@@ -126,3 +122,16 @@ figcaption
     font-family: 'OCR A Std', monospace;
 }
 /*/Imagem*/
+
+/*Classes*/
+.centrotxt
+{
+    text-align: center;
+}
+
+.centro
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+/*/Classes*/
