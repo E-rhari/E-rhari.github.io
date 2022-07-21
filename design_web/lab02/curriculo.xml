@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<curriculo>
+    <informações>
+        <pessoais nome="João Meirellez">
+            <nascimento>21/07/1945</nascimento>
+            <localidade estado="RJ" cep="89872-000">Grumari</localidade>
+            <contato>
+                <email tipo="pessoal">reidoxml@gmail.com</email>
+                <email tipo="institucional">meirellez.joao@optilex7010.com</email>
+                <telefone ddd="21">98127-3420</telefone>
+            </contato>
+        </pessoais>
+        <objetivos>
+    
+        </objetivos>
+        <experiencia>
+            <trabalho tipo="empresa">Trabalhei com FORTRAN por 23 anos no Instituto de Tecnologia de Guarulhos</trabalho>
+            <trabalho tipo="freelancer">Fiz marcação de informações com XML</trabalho>
+        </experiencia>
+        <formação>
+            <escola>
+                <fundamental>Instituto de Artes Arthur Medeiros</fundamental>
+                <medio>IF</medio>            
+            </escola>
+            <graduação>
+                <superior>Computação UNESCO</superior>
+                <pós>Sistema de Informações UFRJ</pós>
+                <mestrado>Informática Aplicada UFRJ</mestrado>
+            </graduação>
+            <extracurricular>
+                <curso instituto="Aliança Inglesa">Inglês</curso>
+                <curso instituto="Cultura Francêsa">Francês</curso>
+                <curso instituto="Idemy" prof="Michael Gilbert">Advanced Photoshop Class</curso>
+                <curso instituto="Idemy" prof="Michael Gilbert">Advanced Premiere Class</curso>
+            </extracurricular>
+        </formação>
+        <habilidades>
+            <proeficiencia tipo="programa" nivel="avançado">Photoshop</proeficiencia>
+            <proeficiencia tipo="programa" nivel="intermediario">Premiere</proeficiencia>
+            <proeficiencia tipo="programa" nivel="intermediario">Visual CodeStudio</proeficiencia>
+            <proeficiencia tipo="social" nivel="avançado">Liderança</proeficiencia>
+            <proeficiencia tipo="linguagem" nivel="avançado">Inglês</proeficiencia>
+            <proeficiencia tipo="linguagem" nivel="intermediario">Francês</proeficiencia>
+        </habilidades>
+    </informações>
+</curriculo>

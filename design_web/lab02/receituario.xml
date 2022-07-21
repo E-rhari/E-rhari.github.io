@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<receituario>
+    <paciente>
+        <nome>Ana Maria</nome>
+        <idade medida="anos">7</idade>
+    </paciente>
+    <indicação>
+        <remedio uso="interno">Xarope Sem Tosse
+            <dose>
+                <quantidade medida="colheres">1</quantidade>
+                <frequencia medida="vezes">3 por dia</frequencia>
+            </dose>
+        </remedio>
+        <remedio uso="externo">Gyellow
+            <dose>
+                <metodo local="braço">Aplicar</metodo>
+                <frequencia medida="vezes">3 por dia</frequencia>
+            </dose>
+        </remedio>
+    </indicação>
+    <data>20/10/2001</data>
+</receituario>

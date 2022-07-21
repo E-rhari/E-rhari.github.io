@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nota-fiscal>
+    <produto>Miojo da Turma da Mônica
+        <quantidade medida="unidade">2</quantidade>
+        <preço moeda="R$">180,00</preço>
+    </produto>
+    <produto>Cesio 137 ativo
+        <quantidade medida="quiilogramas">200</quantidade>
+        <preço moeda="R$">2,80</preço>
+    </produto>
+    <produto>Gasolina
+        <quantidade medida="litros">20</quantidade>
+        <preço moeda="R$">100,00</preço>
+    </produto>
+    <total moeda="R$">282,80</total>
+</nota-fiscal>

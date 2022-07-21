@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<agenda>
+    <contato nome="João Meirellez">
+        <telefone tipo="movel" ddd="21">98127-3420</telefone>
+        <telefone tipo="fixo">50733-4122</telefone>
+        <telefone tipo="trabalho">1273-4103</telefone>
+        <endereço estado="RJ"></endereço>
+    </contato>
+    <contato nome="Dovmoki Zorat">
+        <telefone tipo="movel" ddd="22">98242-1462</telefone>
+        <telefone tipo="fixo">//</telefone>
+        <telefone tipo="trabalho">1536-0984</telefone>
+        <endereço estado=""></endereço>
+    </contato>
+    <contato nome="Grim Evenwood">
+        <telefone tipo="movel" ddd="27">98164-7245</telefone>
+        <telefone tipo="fixo">6274-8346</telefone>
+        <telefone tipo="trabalho">9438-2134</telefone>
+        <endereço estado="">2635-0765</endereço>
+    </contato>
+</agenda>
