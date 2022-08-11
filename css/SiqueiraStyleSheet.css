@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(2, 27, 38);
+}
+
+main {
+    background-color: rgb( 255, 255, 255);
+}
+
+blockquote, main footer {
+    background-color: rgb(195, 227, 245);
+}
+header {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row-reverse;
+    list-style: none;
+    justify-content: space-around;
+}
+
+nav li{
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+nav a{
+    color: #fff
+}
+
+header h1 {
+    color: #fff;
+    justify-content: center;
+}
