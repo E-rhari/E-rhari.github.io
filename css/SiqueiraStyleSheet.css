@@ -20,6 +20,12 @@ figcaption {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+em {
+    font-weight: bold;
+    color: #2e80d1;
+    font-style:normal;
+}
+
     /*Nav*/
     nav ul {
        display: flex;
@@ -35,6 +41,9 @@ figcaption {
     /*Links*/
     a{
         text-decoration: none;
+        color:#00172e;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+        font-size: 0.9em;
     }
     /*!--Links--!*/
 /*!--Base--!*/
@@ -204,18 +213,44 @@ figcaption {
         color: #fff;
     }
 
-    main footer {
-        background-color: rgb(195, 227, 245);
-        width: auto;
-        padding: 0;
+    #copyr{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
-    footer li{
-        margin: auto;
-    }
+        /*Nav Footer*/
+        main footer {
+            background-color: rgb(195, 227, 245);
+            width: auto;
+            padding: 0;
+        }
 
-    footer ul{
-        padding-left: 0;
-    }
-    /*!--Rodapé--!*/
+        footer li{
+            margin: auto;
+        }
+
+        footer ul{
+            padding: 0 40px 0 40px;
+        }
+        /*!--Nav Footer--!*/
+
+        /*Social*/
+            #social{
+                list-style: none;
+                display: flex;
+                flex-direction: row;                padding: 0;
+                margin: 0;
+            }
+
+            #social li{
+                margin: 13px 5px 0 5px;
+            }
+
+            #social img{
+                width: 25px;
+                height: 25px;
+            }
+            /*!--Social--!*/
+        /*!--Rodapé--!*/
 /*!--Divisores--!*/
