@@ -1,0 +1,137 @@
+/*Parágrafos*/
+h1
+{
+    font-size: 3rem;
+    color: #1fbd00;
+    font-family: 'OCR A Std', monospace;
+}
+
+h2
+{
+    font-size: 2.5rem;
+    color: #70d15c;
+    font-family: 'OCR A Std', monospace;
+}
+
+h3
+{
+    font-size: 2.2rem;
+    color: #70d15c;
+    font-family: 'OCR A Std', monospace;
+}
+
+p
+{
+    font-size: 1.25rem;
+    font-family: 'OCR A Std', monospace;
+}
+/*/Parágrafo*/
+
+
+/*Links*/
+a:link 
+{
+ color: #1fbd00;
+}
+
+a:hover, a:visited:hover 
+{
+ color: #70d15c;
+}
+
+a:visited 
+{
+    color: #46853a;
+}
+/*/Links*/
+
+
+/*Listas*/
+li
+{
+    font-size: 1.25rem;
+    font-family: 'OCR A Std', monospace;
+}
+/*/Listas*/
+
+/*Imagem*/
+figcaption
+{
+    font-size: 1rem;
+    color: #1fbd00;
+    font-family: 'OCR A Std', monospace;
+}
+/*/Imagem*/
+
+/*Classes*/
+.bloco{
+    float: left;
+    padding: 0 15px 0 0;
+    width: auto;
+    height: auto;
+}
+
+.titulo{
+    list-style: none;
+    padding: 15px;
+}
+
+.titulo 
+/*!--Classes--!*/
+
+/*Id*/
+#links{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+#lab01{
+    background-color: #fff;
+}
+
+#lab02{
+    background-image: url(../img/Paradox_Icon.jpg);
+    color: #fff;
+}
+
+#lab02 a:hover, #lab02 a:visited:hover{
+    color: #fff;
+}
+
+#lab02 a:visited {
+    color: rgb(165, 179, 163);
+}
+
+#list01{
+    list-style: disc;
+}
+
+#list02{
+    list-style: armenian;
+    color: rgb(255, 255, 255);
+}
+
+footer{
+    float: none;
+}
+
+    /*Social*/
+    #social{
+        float: none;
+        list-style: none;
+        display: flex;
+        flex-direction: row;                padding: 0;
+        margin: 0;
+    }
+
+    #social li{
+        margin: 13px 5px 0 5px;
+    }
+
+    #social img{
+        width: 25px;
+        height: 25px;
+    }
+    /*!--Social--!*/
