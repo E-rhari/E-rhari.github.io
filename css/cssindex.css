@@ -11,6 +11,7 @@ h2
     font-size: 2.5rem;
     color: #70d15c;
     font-family: 'OCR A Std', monospace;
+    display: block;
 }
 
 h3
@@ -96,12 +97,16 @@ figcaption
     color: #fff;
 }
 
+#lab02 a{
+    color: rgb(206, 221, 204);
+}
+
 #lab02 a:hover, #lab02 a:visited:hover{
     color: #fff;
 }
 
 #lab02 a:visited {
-    color: rgb(165, 179, 163);
+    color: rgb(152, 165, 150);
 }
 
 #list01{

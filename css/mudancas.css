@@ -1,0 +1,67 @@
+/*Base*/
+
+    /*Texto*/
+    h1{
+        font-weight: 550;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    h2{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    h3{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    p{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    /*!--Texto--!*/
+
+    /*Emphases*/
+    em{
+        font-weight: 25000;
+        font-style: normal;
+        color: orange;
+    }
+    /*Emphases*/
+
+
+
+    /*Links*/
+    a{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    /*!--Links--!*/
+
+
+/*Divisores*/
+header{
+    display: flex;
+    flex-direction: row;
+}
+
+aside{
+    background-color: rgb(29, 29, 82);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    height: 18px;
+}
+
+
+/*!--Divisores--!*/
+
+/*IDs*/
+#headtxt{
+    display: block;
+    width: 50%;
+}
+
+#headside{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*!--IDs--!*/
