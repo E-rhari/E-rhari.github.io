@@ -25,3 +25,13 @@ article  {
 display: flex;
 gap: 10px;
 }
+
+td, th{
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 6px;
+}
+
+table{
+    border: 3px solid;
+}
