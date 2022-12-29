@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+main, header nav, footer section{
+    padding: 0 200px;
+}
+
+header{
+    position: sticky;
+    top:0;
+}
+
+em{
+    font-weight: bolder;
+    font-style: none;
+}
+
+body {
+    background-color : rgb(22, 13, 14) ; 
+    color : #FFF; 
+}
+
+em{
+    font-style: none; 
+}
+
+.banner{
+    display: flex;
+    background-image: url("./img_camareoun/banner.jpg") ;
+    background-size: cover;
+    padding: 40px 5%;
+    gap: 20px;
+}
+
+.banner img{
+    width: 10%;
+}
+
+#title h1{
+    border-bottom: 1px whitesmoke solid;
+}
+
+#title{
+    color: aliceblue;
+    position: relative;
+    top: 20px;
+
+}
+
+nav{
+background-color: rgb(122, 95, 63);
+}
+
+nav ul{
+display: flex;
+gap: 10%;
+justify-content: space-around;
+list-style: none;
+height: 30px;
+align-items: center;
+}
+
+li a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.topics{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding: 20px 0px;
+margin: 50px 0px 100px 10px;
+gap: 40px;
+}
+
+main ul{
+    list-style: none;
+    color: aliceblue;
+}
+
+.topic{
+    text-align: center;
+    margin: auto;
+}
+
+.topic ul{
+    display: flex;
+    gap: 5%;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 160px;
+} 
+
+.topic img{
+    width: 160px;
+    border-radius: 100%;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+
+nav a:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    transition: 0.25s;
+}
+.topic img:hover{
+    transition: 0.5s;
+    margin: 0;
+    filter: blur(5px)
+}
+
+.topics a:hover{
+    color: rgb(255, 251, 0);
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+footer{
+    background-color: black;
+    padding : 30px; 
+    bottom: 0;
+    width: 100%;
+}
+
+.E-rhari {
+    padding: 20px 0px;
+    width: 100%;
+}
+
+.pontes{
+    padding: 20px 0px;
+    width: 100%;
+}   
+
+.pontes img{
+    float: right;
+}
+
+.pontes h4{
+    text-align: end;
+}
+
+.copy {
+    text-align: center;
+}
+
+.autors img {
+    width : 10%;
+}
+
+.autors{
+    display: flex;
+}
+
+#titleartc{
+    text-align: center;
+}
+main h3{
+    font-size: 25px;
+}
+
+main blockquote{
+padding-bottom: 10%;
+}
+
+article {
+    width: 80%;
+    margin: 0 auto;
+}

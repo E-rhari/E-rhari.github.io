@@ -1,0 +1,27 @@
+@import url("./main.css");
+
+main {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    gap: 30px;
+   padding: 50px 50px ;
+}
+figure img {
+  text-align: center;
+  width: 100%;
+}
+
+.imageblock {
+    display: grid;
+    gap: 20px;
+
+} 
+
+article  {
+    width: 200%;
+    line-height: 40px;
+}
+.imageblock div {
+display: flex;
+gap: 10px;
+}
