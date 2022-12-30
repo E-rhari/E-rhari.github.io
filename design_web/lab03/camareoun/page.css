@@ -4,12 +4,15 @@ main {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     gap: 30px;
-   padding: 50px 50px ;
 }
 
 article  {
     width: 200%;
     line-height: 40px;
+}
+
+figure{
+    vertical-align: top;
 }
 
 figure img {
@@ -18,7 +21,6 @@ figure img {
 }
 
 .imageblock {
-    display: grid;
     gap: 20px;
 
 } 
