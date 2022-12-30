@@ -9,14 +9,22 @@ main, header nav, footer section{
     padding: 0 200px;
 }
 
+main h3{
+    font-size: 25px;
+}
+
+main blockquote{
+    padding-bottom: 10%;
+}
+
+article {
+    width: 80%;
+    margin: 0 auto;
+}
+
 header{
     position: sticky;
     top:0;
-}
-
-em{
-    font-weight: bolder;
-    font-style: none;
 }
 
 body {
@@ -24,8 +32,14 @@ body {
     color : #FFF; 
 }
 
+main ul{
+    list-style: none;
+    color: aliceblue;
+}
+
 em{
-    font-style: none; 
+    font-weight: bolder;
+    font-style: none;
 }
 
 .banner{
@@ -56,12 +70,18 @@ background-color: rgb(122, 95, 63);
 }
 
 nav ul{
-display: flex;
-gap: 10%;
-justify-content: space-around;
-list-style: none;
-height: 30px;
-align-items: center;
+    display: flex;
+    gap: 10%;
+    justify-content: space-around;
+    list-style: none;
+    height: 30px;
+    align-items: center;
+}
+
+nav a:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    transition: 0.25s;
 }
 
 li a {
@@ -70,17 +90,12 @@ li a {
 }
 
 .topics{
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-padding: 20px 0px;
-margin: 50px 0px 100px 10px;
-gap: 40px;
-}
-
-main ul{
-    list-style: none;
-    color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0px;
+    margin: 50px 0px 100px 10px;
+    gap: 40px;
 }
 
 .topic{
@@ -104,15 +119,10 @@ main ul{
     transition: 0.5s;
 }
 
-nav a:hover{
-    color: rgb(0, 0, 0);
-    text-decoration: underline;
-    transition: 0.25s;
-}
 .topic img:hover{
     transition: 0.5s;
     margin: 0;
-    filter: blur(5px)
+    width: 175px;
 }
 
 .topics a:hover{
@@ -125,7 +135,6 @@ footer{
     background-color: black;
     padding : 30px; 
     bottom: 0;
-    width: 100%;
 }
 
 .E-rhari {
@@ -160,16 +169,4 @@ footer{
 
 #titleartc{
     text-align: center;
-}
-main h3{
-    font-size: 25px;
-}
-
-main blockquote{
-padding-bottom: 10%;
-}
-
-article {
-    width: 80%;
-    margin: 0 auto;
 }

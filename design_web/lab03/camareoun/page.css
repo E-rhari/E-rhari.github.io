@@ -6,6 +6,12 @@ main {
     gap: 30px;
    padding: 50px 50px ;
 }
+
+article  {
+    width: 200%;
+    line-height: 40px;
+}
+
 figure img {
   text-align: center;
   width: 100%;
@@ -17,21 +23,36 @@ figure img {
 
 } 
 
-article  {
-    width: 200%;
-    line-height: 40px;
-}
 .imageblock div {
-display: flex;
-gap: 10px;
+    display: flex;
+    gap: 10px;
 }
 
-td, th{
+td, tr{
     border: 1px solid;
     border-collapse: collapse;
     padding: 6px;
+    text-align: center;
 }
 
 table{
     border: 3px solid;
+}
+
+tr:nth-child(even){
+    background-color: rgb(34, 26, 26)
+}
+
+tr:hover{
+    background-color: rgb(92, 81, 82)
+}
+
+td:hover{
+    font-size: 1.05rem;
+    transition: 0.25s;
+}
+
+tr:first-child{
+    background-color: rgb(63, 51, 52) ; 
+    font-weight: bold;
 }
