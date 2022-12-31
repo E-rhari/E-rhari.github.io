@@ -188,4 +188,10 @@ footer{
 
 @media  screen and (max-width: 980px) {
     main{flex-direction: column;}
+    iframe{width: 545px; height: 306px;}
+}
+
+@media  screen and (max-width: 800px) {
+    main{flex-direction: column;}
+    iframe{width: 272px; height: 153px;}
 }
