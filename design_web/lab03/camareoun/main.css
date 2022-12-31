@@ -56,6 +56,13 @@ em{
     font-style: none;
 }
 
+iframe{
+    display: block;
+    margin: 25px auto; 
+    width: 727px; 
+    height: 409px;
+}
+
 .banner{
     display: flex;
     background-image: url("./img_camareoun/banner.jpg") ;
@@ -94,7 +101,7 @@ nav ul{
 
 nav a:hover{
     color: rgb(255, 255, 255);
-    font-size: 1.025rem;
+    font-size: 1.025em;
     text-decoration: underline;
     transition: 0.5s;
 }
@@ -184,4 +191,14 @@ footer{
 
 #titleartc{
     text-align: center;
+}
+
+@media  screen and (max-width: 980px) {
+    main{flex-direction: column;}
+    iframe{width: 545px; height: 306px;}
+}
+
+@media  screen and (max-width: 800px) {
+    main{flex-direction: column;}
+    iframe{width: 272px; height: 153px;}
 }
