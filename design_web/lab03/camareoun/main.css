@@ -41,6 +41,11 @@ header ul, .topics ul{
     color: aliceblue;
 }
 
+h2 {
+    font-size: 2.3rem;
+    margin: 20px 0 5px 0;
+}
+
 ul{
     padding-left: 20px;
     list-style-type:square;
