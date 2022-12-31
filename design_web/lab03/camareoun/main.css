@@ -56,6 +56,14 @@ em{
     font-style: none;
 }
 
+iframe{
+    display: block;
+    margin: 20px auto;
+    width: 727px; 
+    height: 409px;
+
+}
+
 .banner{
     display: flex;
     background-image: url("./img_camareoun/banner.jpg") ;
