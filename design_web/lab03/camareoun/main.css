@@ -111,6 +111,7 @@ li a {
 .topic{
     text-align: center;
     margin: auto;
+    height: 242px;
 }
 
 .topic ul{
