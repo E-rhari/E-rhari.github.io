@@ -24,20 +24,19 @@ const marmotation = (numeroBuraco) => {
 }
 
 function startGame(){
-    let gameTimer = 300;
+    let gameTimer = 400;
     let intervalo = setInterval(()=>{
         const num = selecionaBuraco();
         marmotation(num);;}, gameTimer)
-    
     setTimeout(() => {clearInterval(intervalo)}, 16000)
 }
 
 game.addEventListener("click", (evento)=>{
     if('mole' == evento.target.classList[0])
         if(!clickActive){
-        evento.target.parentNode.classList.remove("up");
-        scoreBoard.innerHTML = parseInt(scoreBoard.innerHTML) + 1;
-        clickActive = true;
+            evento.target.parentNode.classList.remove("up");
+            scoreBoard.innerHTML = parseInt(scoreBoard.innerHTML) + 1;
+            clickActive = true;
     }
 })
 
