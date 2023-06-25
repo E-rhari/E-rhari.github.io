@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas</title>
+</head>
+<body>
+    <header>
+        <h1>Receitas AJAX</h1>
+    </header>
+    <main>
+        <div id="receitas">
+        </div>
+    </main>
+</body>
+<script>
+    const carregaListaOrdenada = lista => {
+        return lista.reduce((acum, item) => acum += `<li>${item}</li>`, "");
+        }
+
+    const carregaReceita = receita => {
+        let resp = `<div class="receita">
+            <h2>${receita.nome}</h2>
+            <img src="${receita.foto}">
+            <p>${receita.descricao}</p>`;
+
+        resp += `<h4>Ingredientes:</h4>`
+        resp += `<ol>${carregaListaOrdenada(receita.ingredientes)}</ol>`
+
+        resp += `<h4>Preparo:</h4>`
+        resp += `<ol>${carregaListaOrdenada(receita.preparo)}</ol>`;
+
+        document.querySelector("#receitas").innerHTML += resp;
+    }
+
+
+    const xhttp = new XMLHttpRequest();
+    const url = "https://rafaelescalfoni.github.io/desenv_web/receitas.json";
+    
+    xhttp.open("GET", url)
+    xhttp.send();
+    xhttp.onreadystatechange = function(){
+        if(this.readyState == 4)
+            if(this.status == 200){
+                console.log("Deu bom :-)")
+
+                let resposta = this.responseText;
+                let receitas = JSON.parse(resposta);
+                console.dir(receitas)
+
+                receitas.forEach(receita => {
+                    carregaReceita(receita);
+                })
+            }
+
+            else{
+                console.log("Deu Bigode :#(")
+            }
+        }
+</script>
+</html>
