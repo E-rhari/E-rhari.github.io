@@ -50,49 +50,47 @@ const coloreClassificacao = (classificacao) => {
         return tagClassificacao;
 }
 
-
-const xhttp     = new XMLHttpRequest();
-const url       = "https://rafaelescalfoni.github.io/desenv_web/filmes.json";
-const filmesDiv = document.querySelector("#filmes");
-
-
-xhttp.open("GET", url);
-xhttp.send();
-
-xhttp.onreadystatechange = function(){
-    if(this.readyState == 4 && this.status == 200){
-        const filmesJson = JSON.parse(this.responseText);
-        console.dir(filmesJson);
-
-        filmesJson.forEach(filme => {
-            let cardFilme = `<div class="filme">` 
-
-            cardFilme += `<div class="top">`
-            cardFilme += `<img src="${filme.figura}">`;
-            cardFilme += `<div id="non-img-top">`
-            cardFilme += `<h2>${filme.titulo}</h2>`;
-            cardFilme += carregaListaComTipo("Gênero", filme.generos, "ul");
-            cardFilme += `</div></div>`
-
-            cardFilme += carregaListaComTipo("Elenco", filme.elenco, "ul");
-            cardFilme += `<p>${filme.resumo}</p>`;
-
-            cardFilme += `<div class="bottom">`
-            cardFilme += coloreClassificacao(filme.classificacao);
-            const notaMedia = getMedia(filme.opinioes)
-            cardFilme += getEstrelas(notaMedia)
-            cardFilme += `</div>`
-
-
-            const semelhantes = filme.titulosSemelhantes.map(tituloSemelhanteId => filmesJson[tituloSemelhanteId-1].titulo)
-            cardFilme += semelhantes.length > 0 ? carregaListaComTipo("Semelhantes", semelhantes, "ul") : ``;
-
-            cardFilme += `</div>`;
-            filmesDiv.innerHTML += cardFilme;
-        })
-    }
+const getFilmes = async () => {
+    const url = "https://rafaelescalfoni.github.io/desenv_web/filmes.json";
+    const resposta = await fetch(url);
+    const dados = await resposta.json()
+    return dados;
 }
 
+
+const renderizaFilmes = async function(){
+    const filmesDiv = document.querySelector("#filmes");
+    filmesJson = await getFilmes();
+
+    filmesJson.forEach(filme => {
+        let cardFilme = `<div class="filme">` 
+
+        cardFilme += `<div class="top">`
+        cardFilme += `<img src="${filme.figura}">`;
+        cardFilme += `<div id="non-img-top">`
+        cardFilme += `<h2>${filme.titulo}</h2>`;
+        cardFilme += carregaListaComTipo("Gênero", filme.generos, "ul");
+        cardFilme += `</div></div>`
+
+        cardFilme += carregaListaComTipo("Elenco", filme.elenco, "ul");
+        cardFilme += `<p>${filme.resumo}</p>`;
+
+        cardFilme += `<div class="bottom">`
+        cardFilme += coloreClassificacao(filme.classificacao);
+        const notaMedia = getMedia(filme.opinioes)
+        cardFilme += getEstrelas(notaMedia)
+        cardFilme += `</div>`
+
+
+        const semelhantes = filme.titulosSemelhantes.map(tituloSemelhanteId => filmesJson[tituloSemelhanteId-1].titulo)
+        cardFilme += semelhantes.length > 0 ? carregaListaComTipo("Semelhantes", semelhantes, "ul") : ``;
+
+        cardFilme += `</div>`;
+        filmesDiv.innerHTML += cardFilme;
+    })
+}
+
+renderizaFilmes()
 
 const aleatorio = Math.random()
 console.log(aleatorio)
