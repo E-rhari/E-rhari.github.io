@@ -112,7 +112,6 @@ const piadas = [
                 "Chirashisushi",
                 "[Insira piada aqui]",
                 "Procrastinação",
-
 ]
 
 const subtitulo = document.querySelector("#subtitulo");
