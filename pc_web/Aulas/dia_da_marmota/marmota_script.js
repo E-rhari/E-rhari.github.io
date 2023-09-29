@@ -27,7 +27,7 @@ function startGame(){
     let gameTimer = 400;
     let intervalo = setInterval(()=>{
         const num = selecionaBuraco();
-        marmotation(num);;}, gameTimer)
+        marmotation(num);}, gameTimer)
     setTimeout(() => {clearInterval(intervalo)}, 16000)
 }
 
