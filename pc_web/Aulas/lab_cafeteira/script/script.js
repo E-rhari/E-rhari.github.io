@@ -1,19 +1,23 @@
 const menu = document.querySelectorAll(".item");
 
 let total = 0;
-let carrinho = []
-if(localStorage.getItem("carrinho"))
-    console.dir(localStorage.getItem("carrinho"));
-    // carrinho = localStorage.getItem("carrinho");
+if(localStorage)
+    for(let i = 0; i < localStorage.length; i++){
+        const item = JSON.parse(localStorage.getItem(i));
+        adicionaItemEPreco(item);
+    }
 
-// carrinho.forEach(item =>{
-
-// })
 
 
 function ItemSelecionado(nome, preco){
     this.nome = nome;
     this.preco = parseFloat(preco.substr(2));
+}
+
+
+function adicionaItemEPreco(item){
+    adicionaAoCarrinho(item);
+    adicionaPreçoAoTotal(item);
 }
 
 
@@ -30,10 +34,9 @@ function adicionaAoCarrinho(item){
 }
 
 
+
 menu.forEach(itemAtual => {
     itemAtual.addEventListener("click", () =>{
-        // const target = evento.target;
-        // const itemNome = target.getElementsByTagName("figcaption")[0].textContent
         const itemNome = itemAtual.querySelector("figcaption").textContent
         const itemPreco = itemAtual.querySelector(".item-price").textContent
         
@@ -42,13 +45,6 @@ menu.forEach(itemAtual => {
         adicionaAoCarrinho(item)
         adicionaPreçoAoTotal(item);
 
-        carrinho.push(item);
-
-        for(let i = 0; i < carrinho.length; i++){
-        localStorage.setItem(i, item)
-        // localStorage.removeItem("carrinho")
-        console.dir(localStorage.getItem("carrinho"))
-
-            }
+        localStorage.setItem(localStorage.length, JSON.stringify(item));
     });
 });
