@@ -1,0 +1,95 @@
+p, h1, h2, h3, h4, h5, h6, li {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(5, 50, 11);
+}
+
+body {
+    margin: 0;
+    background-color: rgb(236, 255, 238);
+}
+
+main {
+    padding: 15px;
+    display: flex;
+}
+
+header {
+    padding: 20px 20px 0 20px;
+    display: flex;
+}
+
+header h1 {
+    margin: 0 45%;
+}
+
+
+li {
+    list-style: none;
+}
+
+button {
+  background-color: #e9f8ea;
+  border: none;
+  border-radius: 5px;
+  color: rgb(8, 41, 4);
+  padding: 7px 16px;
+  text-align: center;
+  font-size: 16px;
+  transition: 0.25s;
+}
+
+button:hover{
+    background-color: #f0ffea;
+    color: rgb(158, 186, 155);
+    transition: 0.5s;
+}
+
+
+#final{
+    width: 100%;
+    max-width: 20%;
+}
+
+#carrinho, .prato, .pedido-antigo {
+    border-radius: 10px;
+    margin: 12px;
+    padding: 12px;
+}
+
+#carrinho {
+    margin-bottom: 15px;
+    background-color: rgb(92, 175, 98);
+}
+
+#carrinho h3 {
+    margin: 0;
+}
+
+.pedido-antigo {
+    background-color: rgb(136, 215, 127);
+}
+
+.pedido-antigo li {
+    color: rgb(234, 247, 242);
+}
+
+#pratos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.prato {
+    width: 250px;
+    background-color: rgb(183, 240, 187);
+}
+
+.prato:hover {
+    background-color: rgb(214, 243, 216);
+    transition: 0.5s;
+}
+
+.prato h3, .prato h4 {
+    margin: 0;
+}
