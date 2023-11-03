@@ -19,6 +19,8 @@ const addToCartAndTotalPrice = item => {
 
 const reestablishCartFromStorage = () =>{
     let i = 0;
+    if(localStorage.length == 0)
+        return
     for(i; i < localStorage.length; i++)
         addToCartAndTotalPrice(JSON.parse(localStorage[i]))
 }
