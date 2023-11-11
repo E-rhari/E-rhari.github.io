@@ -56,12 +56,16 @@ function adicionaTransacao(nome, valor){
         } 
         else if(valor < 0){
             const despesasDom = document.querySelector("#money-minus");
-            const novaDespesa = parseFloat(despesasDom.innerHTML.slice(4)) + valor;
+            const novaDespesa = parseFloat(despesasDom.innerHTML.slice(4)) + parseFloat(valor);
+            console.log(novaDespesa)
             despesasDom.innerHTML = `- R$${parseFloat(novaDespesa).toFixed(2)}`;
+            // const despesasDom = document.querySelector("#money-minus");
+            // const novaDespesa = parseFloat(despesasDom.innerHTML.slice(4)) + valor;
+            // despesasDom.innerHTML = `- R$${parseFloat(novaDespesa).toFixed(2)}`;
         }
         
         const balancoDom = document.querySelector("#balance");
-        let novoBalaco = parseFloat(balancoDom.innerHTML.slice(3)) - valor;
+        const novoBalaco = parseFloat(balancoDom.innerHTML.slice(3)) - valor;
         balancoDom.innerHTML = `R$ ${novoBalaco.toFixed(2)}`;
 
         remover(nome, valor)
@@ -81,7 +85,6 @@ function atualizaRenda(valorFloat) {
         const despesasDom = document.querySelector("#money-minus");
         const novaDespesa = parseFloat(despesasDom.innerHTML.slice(4)) - valorFloat;
         despesasDom.innerHTML = `- R$${parseFloat(novaDespesa).toFixed(2)}`;
-
     }
 
     const balancoDom = document.querySelector("#balance");
